@@ -9,12 +9,12 @@
 int main(void)
 {
 	int i = 0;
-	char alphabets[] = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (; i < strlen(alphabets); )
 	{
 		putchar(alphabets[i]);
-		putchar("\n");
+		putchar('\n');
 		i++;
 	}
 	return (0);
