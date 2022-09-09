@@ -11,8 +11,8 @@ int main(void)
 {
 	float n;
 
-	srand((unsigned int)time(NULL));
-	n = (double)rand() - ((double)RAND_MAX / 2);
+	srand(time(NULL));
+	n = rand() - (RAND_MAX / 2);
 
 	if (n > 0)
 	{
