@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(num + '0');
 		putchar(',');
-		putchar('\n');
+		putchar(' ');
 		num++;
 	}
 	return (0);
