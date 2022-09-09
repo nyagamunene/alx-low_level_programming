@@ -9,22 +9,22 @@
 */
 int main(void)
 {
-	long int n;
+	int n;
 
 	srand(time(NULL));
 	n = rand() - (RAND_MAX / 2);
 
 	if (n > 0)
 	{
-		printf("%l is positive", n);
+		printf("%i is positive", n);
 	}
 	else if (n == 0)
 	{
-		printf("%l is zero", n);
+		printf("%i is zero", n);
 	}
 	else
 	{
-		printf("%l is negative", n);
+		printf("%i is negative", n);
 	}
 	return (0);
 }
