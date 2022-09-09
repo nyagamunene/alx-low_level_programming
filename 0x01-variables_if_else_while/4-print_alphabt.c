@@ -9,12 +9,11 @@ int main(void)
 	char lower = 'a';
 
 	do {
-		if (lower != 'q')
-		|| (lower != 'e')
+		if (lower != 'q') || (lower != 'e')
 		{
 			putchar(lower);
 		}
-	} while (lower <= 'z')
+	} while (lower <= 'z');
 	putchar('\n');
 	return (0);
 }
