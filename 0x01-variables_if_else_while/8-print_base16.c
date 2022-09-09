@@ -10,12 +10,15 @@ int main(void)
 	char hexL = 'a';
 
 	while (hexN <= '9')
+	{
 		putchar(hexN);
 		hexN++;
-
+	}
 	while (hexL <= 'f')
+	{
 		putchar(hexL);
 		hexL++;
+	}
 	putchar('\n');
 	return (0);
 }
