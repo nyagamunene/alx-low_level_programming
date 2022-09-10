@@ -8,6 +8,7 @@ int main(void)
 {
 	int num1, num2;
 	int a, b, c, d;
+
 	for (num1 = 0; num1 <= 99; num1++)
 	{
 		a = num1 / 10;
@@ -25,7 +26,7 @@ int main(void)
 				putchar(' ');
 				putchar(c + '0');
 				putchar(d + '0');
-				if(a != 9 || b != 8)
+				if (a != 9 || b != 8)
 				{
 					putchar(',');
 					putchar(' ');
