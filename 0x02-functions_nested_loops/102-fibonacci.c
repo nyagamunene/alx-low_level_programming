@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int first = 1, second = 1, third = 0, count = 50;
+	int first = 1, second = 1, count = 50;
 
 	printf("%d, ", first);
 	for ( ; second < count; )
