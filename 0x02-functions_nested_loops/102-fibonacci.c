@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - fibonacci sequence upto 50
+ * main - ffirst 50 values in fibonacci sequence
  * Return: 0
  */
 int main(void)
@@ -11,7 +11,7 @@ int main(void)
 	for (i = 0 ; i < count; i++)
 	{
 		printf("%ld", second);
-		if (i < 49)
+		if (i < count - 1)
 		{
 			printf(", ");
 		}
