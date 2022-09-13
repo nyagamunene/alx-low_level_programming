@@ -1,9 +1,10 @@
 #include "main.h"
 /**
  * _isalpha - lowercase / uppercase
- * Return: 1 / 0 
+ * @c: The character been checked
+ * Return: 1 / 0
  */
 int _isalpha(int c)
 {
-	return (((c > 65 && c < 91) || (c > 96 && c< 123)) ? 1 :0);
+	return (((c > 65 && c < 91) || (c > 96 && c < 123)) ? 1 : 0);
 }
