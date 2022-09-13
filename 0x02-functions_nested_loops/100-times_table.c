@@ -12,7 +12,6 @@ void print_times_table(int n)
 	{
 		while (count <= n)
 		{
-			
 			if (result > 99)
 			{
 				_putchar(result / 100 + '0');
@@ -46,8 +45,4 @@ void print_times_table(int n)
 				count++;
 				result = 0;
 				status = 0;
-				_putchar('\n');
-			}
-		}
-	}
-}
+				_putchar('\n'); }}}}
