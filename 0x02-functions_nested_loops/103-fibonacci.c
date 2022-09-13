@@ -9,7 +9,8 @@ int main(void)
 
 	for ( ; second < 4000000; )
 	{
-		if (second % 2 == 0) sum += second;
+		if (second % 2 == 0)
+			sum += second;
 		first -= second;
 		second += first;
 		first = second - first;
