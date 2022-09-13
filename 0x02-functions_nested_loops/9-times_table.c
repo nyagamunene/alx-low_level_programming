@@ -26,7 +26,16 @@ void times_table(void)
 			if (i < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
+				if (result < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(' ');
+				}
+				
 			}
 		}
 		increment++;
