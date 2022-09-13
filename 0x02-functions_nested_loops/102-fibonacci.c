@@ -8,7 +8,6 @@ int main(void)
 	unsigned long int first = 1, second = 1;
 	int i, count = 50;
 
-	printf("%ld, ", first);
 	for (i = 0 ; i < count; i++)
 	{
 		printf("%ld", second);
