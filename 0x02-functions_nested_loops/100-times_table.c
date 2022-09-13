@@ -31,16 +31,21 @@ void print_times_table(int n)
 			if (status % (n + 1) != 0)
 			{
 				_putchar(',');
-			}
-			if (result < 100)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(' ');
+				if (result < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (result < 100)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(' ');
+				}
 			}
 			result += count;
 			if (status % (n + 1) == 0)
