@@ -5,12 +5,17 @@
  */
 int main(void)
 {
-	int first = 1, second = 1, count = 50;
+	unsigned long int first = 1, second = 1;
+	int i, count = 50;
 
-	printf("%d, ", first);
-	for ( ; second < count; )
+	printf("%ld, ", first);
+	for (i = 0 ; i < count; i++)
 	{
-		printf("%d, ", second);
+		printf("%ld", second);
+		if (i < 49)
+		{
+			printf(", ");
+		}
 		first -= second;
 		second += first;
 		first = second - first;
