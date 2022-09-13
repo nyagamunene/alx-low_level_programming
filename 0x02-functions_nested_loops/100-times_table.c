@@ -34,7 +34,7 @@ void print_times_table(int n)
 			if (status % (n + 1) != 0)
 			{
 				_putchar(',');
-				
+				_putchar(' ');
 			}
 			result += count;
 			if (status % (n + 1) == 0)
