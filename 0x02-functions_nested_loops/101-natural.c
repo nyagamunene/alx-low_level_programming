@@ -7,7 +7,7 @@ int main(void)
 {
 	int count, sum = 0, num = 1024;
 
-	for ( count = 0; count < num; count++)
+	for (count = 0; count < num; count++)
 	{
 		sum += (count % 3 == 0 || count % 5 == 0) ? count : 0;
 	}
