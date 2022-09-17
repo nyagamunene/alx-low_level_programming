@@ -14,10 +14,9 @@ int main(void)
 	{
 		if (num % i == 0)
 		{
-			printf("%lu, ", i);
+			printf("%lu\n", i);
 			break;
 		}
 	}
-	printf("\n");
 	return (0);
 }
