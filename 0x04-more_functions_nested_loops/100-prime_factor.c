@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long num, i;
 
-	num = 1231952;
+	num = 612852475143;
 
 	for (i = (int)sqrt(num); i > 2; i++)
 	{
