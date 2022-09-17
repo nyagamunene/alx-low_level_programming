@@ -6,7 +6,7 @@
  */
 void print_number(int n)
 {
-	int rev = 0, rem = 0, neg = 0;
+	long rev = 0, rem = 0, neg = 0;
 
 	if (n > 0)
 	{
