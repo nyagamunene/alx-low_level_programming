@@ -15,7 +15,7 @@ void puts_half(char *str)
 	}
 	center = (len % 2 == 0) ? len / 2 : (len - 1) / 2;
 
-	for (i = center; i <= len; i++)
+	for (i = center + 1; i <= len; i++)
 	{
 		_putchar(str[i]);
 	}
