@@ -1,24 +1,40 @@
 #include "main.h"
 /**
- * @brief 
- * 
+ * _atoi - string to integer
+ * @s: string pointer
+ * Return: Integer
  */
 int _atoi(char *s)
 {
-    int len = 0, i, num;
+	int num = 0, i;
+	int sign = -1;
 
-	while (s[len] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		len++;
+		if (s[i] == '-')
+		{
+			sign = sign * -1;
+		}
+
+		if (s[i] > 47 && s[i] < 58)
+		{
+			if (num < 0)
+			{
+				num = (num * 10) - (s[i] - '0');
+			}
+			else
+			{
+				num = (s[i] - '0') * -1;
+			}
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+			{
+				break;
+			}
+		}
 	}
-
-    for (i = 0; i < len; i++)
-    {
-        if (s[i] > 47 && s[i] < 58)
-        {
-            num = (s[i] + '0') * 10;
-        }
-    }
-
-    return (num);
+	if (sign < 0)
+	{
+		num =  num * -1;
+	}
+	return (num);
 }
