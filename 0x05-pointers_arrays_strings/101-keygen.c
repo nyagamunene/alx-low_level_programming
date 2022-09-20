@@ -7,11 +7,11 @@
 */
 int main(void)
 {
-	srand(time(NULL));
 	int random;
 	int i;
 	int range = 126 + 1;
 
+	srand(time(NULL));
 	for (i = 0; i < range; i++)
 	{
 		random = rand() % range + 1;
