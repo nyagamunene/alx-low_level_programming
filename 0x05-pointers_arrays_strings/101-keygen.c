@@ -8,7 +8,8 @@
 int main(void)
 {
 	srand(time(NULL));
-	int random, i;
+	int random;
+	int i;
 	int range = 126 + 1;
 
 	for (i = 0; i < range; i++)
