@@ -16,7 +16,8 @@ char *rot13(char *str)
 			str[i] += 13;
 			done = 1;
 		}
-		while ((str[i] > 77 && str[i] < 91 && done == 0) || (str[i] > 109 && str[i] < 123 && done == 0))
+		while ((str[i] > 77 && str[i] < 91 && done == 0)
+		 || (str[i] > 109 && str[i] < 123 && done == 0))
 		{
 			str[i] -= 13;
 		}
