@@ -6,8 +6,6 @@
 */
 int factorial(int n)
 {
-	int prod = 1;
-
 	if (n > 2)
 	{
 		return (n * factorial(n - 1));
