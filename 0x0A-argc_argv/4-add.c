@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 
 	if(argc == 1)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 	while (i < argc)
 	{
-		if(atoi(argv[i]) == 0)
+		if(atoi(argv[i]) == 0 || atoi(argv[i]) < 0)
 		{
 			printf("Error\n");
 			return (1);
