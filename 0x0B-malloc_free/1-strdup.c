@@ -6,7 +6,7 @@
 */
 char *_strdup(char *str)
 {
-	char* New;
+	char *New;
 	int i, size = 0;
 
 	if (str == NULL)
@@ -26,6 +26,6 @@ char *_strdup(char *str)
 	{
 		New[i] = str[i];
 	}
-	
+
 	return (New);
 }
