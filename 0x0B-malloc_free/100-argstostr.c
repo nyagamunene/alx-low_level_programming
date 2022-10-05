@@ -8,7 +8,7 @@
 char *argstostr(int ac, char **av)
 {
 
-	char *a, *concat;
+	char *concat, *pointer;
 	int i, j, len;
 
 	if (ac == 0 || av == NULL)
@@ -17,26 +17,30 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0, len = 0; i < ac; i++)
 	{
-		for (j = 0; *(*(av + i) + j) != '\0'; j++, len++)
-			;
+		j = 0;
+		while (*(*(av + i) + j) != '\0')
+		{
+			len++;
+			j++;
+		}
 		len++;
 	}
 	len++;
-
-	a = malloc(len * sizeof(char));
-	if (a == NULL)
+	pointer = malloc(len * sizeof(char));
+	if (pointer == NULL)
+	{
 		return (NULL);
-
-	concat = a;
+	}
+	concat = pointer;
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			*a = av[i][j];
-			a++;
+			*pointer = av[i][j];
+			pointer++;
 		}
-		*a = '\n';
-		a++;
+		*pointer = '\n';
+		pointer++;
 	}
 
 	return (concat);
