@@ -8,9 +8,18 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat = malloc(sizeof(s1) + n);
+	char *concat;
 	unsigned int i, k;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if(s2 == NULL)
+	{
+		s2 = "";
+	}
+	concat = malloc(sizeof(s1) + n);
 	if (concat == NULL)
 	{
 		return (NULL);
